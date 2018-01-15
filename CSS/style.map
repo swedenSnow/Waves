@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../scss/style.css",
+	"sources": [
+		"../scss/style.scss"
+	],
+	"sourcesContent": [
+		"body {\n\tcolor: red;\n\theight: 100vh;\n\twidth: 100vw;\n\tbackground-color: white;\n\t--primary: red; \n\tcolor: var(--primary);\n}\n\n"
+	],
+	"mappings": ";AAAA,AAAA,IAAI,CAAC;EACJ,KAAK,EAAE,GAAI;EACX,MAAM,EAAE,KAAM;EACd,KAAK,EAAE,KAAM;EACb,gBAAgB,EAAE,KAAM;EACxB,SAAS,EAAE,GAAI;EACf,KAAK,EAAE,cAAG;CACV",
+	"names": []
+}
