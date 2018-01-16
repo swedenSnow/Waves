@@ -1,5 +1,15 @@
-$font-stack:    Helvetica, sans-serif;
-$primary-color: #333;
+// In this 'final' scss-file, in sass we split up the code
+// into partials to manage it more easily. 
+
+// Partials
+@import 'variabel';
+@import 'reset';
+@import 'navbar';
+@import 'button';
+@import 'main';
+@import 'footer';
+@import 'aside';
+
 
 body {
   font: 100% $font-stack;
