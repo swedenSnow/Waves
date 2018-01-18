@@ -1,8 +1,7 @@
-<<<<<<< HEAD
+
 body{margin:0;padding:0;width:100%;height:100vh;display:flex;flex-direction:column;align-items:center}*{box-sizing:border-box}body{font-family:'Playfair Display', serif}
-=======
+
 body {
-  color: #dacfc3;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -23,8 +22,7 @@ body {
   background-attachment: fixed; }
 
 body {
-  font: 100% "Playfair Display", serif;
-  color: #dacfc3; }
+  font: 100% "Playfair Display", serif; }
 
 /*# sourceMappingURL=style.css.map */
->>>>>>> 18ab4ef2f65000eb322e809203ab1073af50f024
+
