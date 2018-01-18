@@ -1,1 +1,21 @@
-body{margin:0;padding:0;width:100%;height:100vh;display:flex;flex-direction:column;align-items:center}*{box-sizing:border-box}body{font-family:'Playfair Display', serif}.parallax{background:url("/Users/haniabuzeid/Visual_studio_code/Gitfitt/Waves/BILDER/waves_desktop_para.png") no-repeat center center;background-size:cover;background-attachment:fixed}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Playfair Display', serif; }
+
+.parallax {
+  background: url("images/waves_para_desktop.png") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed; }
+
+/*# sourceMappingURL=style.css.map */
