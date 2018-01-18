@@ -1,5 +1,5 @@
 body {
-  color: #333;
+  color: #dacfc3;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -14,8 +14,13 @@ body {
 body {
   font-family: 'Playfair Display', serif; }
 
+.parallax {
+  background: url("/Users/haniabuzeid/Visual_studio_code/Gitfitt/Waves/BILDER/waves_desktop_para.png") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed; }
+
 body {
-  font: 100% Helvetica, sans-serif;
-  color: #333; }
+  font: 100% "Playfair Display", serif;
+  color: #dacfc3; }
 
 /*# sourceMappingURL=style.css.map */
