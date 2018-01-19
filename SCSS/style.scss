@@ -28,11 +28,9 @@ p{
     @include flex-container;
     background-color: $primary-color2;
     color: $primary-color;
-    text-align: justify;
 }
 .medarbetar-container {
     @include flex-container;
-    display: flex;
     div {
         background-color: $primary-color;
         color: black;
@@ -41,14 +39,12 @@ p{
 .uppdrag-container {
     @include flex-container;
     background-color: $primary-color;
-    text-align: justify;
 
 }
 .tjanster-container {
     @include flex-container;
     background-color: $primary-color2;
     color: $primary-color;
-    text-align: justify;
 }
 
 .kontakt-container{
