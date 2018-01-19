@@ -12,7 +12,7 @@
 @import 'mixins';
 
 p{
-    max-width: 900px;
+    max-width: 800px;
     margin: auto;
 }
 
@@ -20,19 +20,18 @@ p{
     background-image: $waves-icon ,$start-pic;
     width: 100%;
     height: auto;
-    padding-bottom: 500px;
     background-repeat: no-repeat,no-repeat;
     attachment: fixed;
     background-position: center;
 }
 .om-oss-container {
-    @include image-icon;
+    @include flex-container;
     background-color: $primary-color2;
     color: $primary-color;
     text-align: justify;
 }
 .medarbetar-container {
-    @include image-icon;
+    @include flex-container;
     display: flex;
     div {
         background-color: $primary-color;
@@ -40,14 +39,25 @@ p{
     }
 }
 .uppdrag-container {
-    @include image-icon;
+    @include flex-container;
     background-color: $primary-color;
     text-align: justify;
 
 }
 .tjanster-container {
-    @include image-icon;
+    @include flex-container;
     background-color: $primary-color2;
     color: $primary-color;
     text-align: justify;
 }
+
+.kontakt-container{
+    background-color: $primary-color;
+}
+
+input[type=text], textarea{
+    @include contact-form
+    background-color: $primary-color;
+}
+
+
