@@ -11,8 +11,11 @@
 @import 'aside';
 @import 'mixins';
 
-h1 {
-    text-align: center;
+p{
+    max-width: 1000px;
+    margin: auto;
+    padding: 15px;
+    
 }
 
 .home-container {
@@ -26,12 +29,15 @@ h1 {
 }
 .om-oss-container {
     background-color: $primary-color2;
+    width: 100%;
+    color: $primary-color;
 }
 .medarbetar-container {
     @include image-icon;
     display: flex;
     div {
         background-color: $primary-color;
+        color: black;
     }
 }
 .uppdrag-container {
