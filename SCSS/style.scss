@@ -9,16 +9,42 @@
 @import 'main';
 @import 'footer';
 @import 'aside';
-
-
-.home-container{
-	background-image: $waves-icon, $start-pic ;
-	width: 100%;
-    height: auto;
-	padding-bottom: 500px;
-    background-repeat: no-repeat, no-repeat;
-    attachment: fixed;
-    background-position: center; 
+h1 {
+    text-align: center;
+}
+@mixin image-icon {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    div {
+        margin: 10px;
+        text-align: center;
     }
-         
-
+}
+.home-container {
+    background-image: $waves-icon ,$start-pic;
+    width: 100%;
+    height: auto;
+    padding-bottom: 500px;
+    background-repeat: no-repeat,no-repeat;
+    attachment: fixed;
+    background-position: center;
+}
+.om-oss-container {
+    background-color: $primary-color2;
+}
+.medarbetar-container {
+    @include image-icon;
+    display: flex;
+    div {
+        background-color: $primary-color;
+    }
+}
+.uppdrag-container {
+    @include image-icon;
+    background-color: $primary-color;
+}
+.tjanster-container {
+    @include image-icon;
+    background-color: $primary-color2;
+}
