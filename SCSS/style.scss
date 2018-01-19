@@ -12,10 +12,8 @@
 @import 'mixins';
 
 p{
-    max-width: 1000px;
+    max-width: 900px;
     margin: auto;
-    padding: 15px;
-    
 }
 
 .home-container {
@@ -28,9 +26,10 @@ p{
     background-position: center;
 }
 .om-oss-container {
+    @include image-icon;
     background-color: $primary-color2;
-    width: 100%;
     color: $primary-color;
+    text-align: justify;
 }
 .medarbetar-container {
     @include image-icon;
@@ -43,8 +42,12 @@ p{
 .uppdrag-container {
     @include image-icon;
     background-color: $primary-color;
+    text-align: justify;
+
 }
 .tjanster-container {
     @include image-icon;
     background-color: $primary-color2;
+    color: $primary-color;
+    text-align: justify;
 }
