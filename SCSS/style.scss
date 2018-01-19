@@ -9,18 +9,12 @@
 @import 'main';
 @import 'footer';
 @import 'aside';
+@import 'mixins';
+
 h1 {
     text-align: center;
 }
-@mixin image-icon {
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    div {
-        margin: 10px;
-        text-align: center;
-    }
-}
+
 .home-container {
     background-image: $waves-icon ,$start-pic;
     width: 100%;

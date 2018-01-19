@@ -1,0 +1,9 @@
+@mixin image-icon {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    div {
+        margin: 10px;
+        text-align: center;
+    }
+}
