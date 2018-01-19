@@ -10,3 +10,15 @@
 @import 'footer';
 @import 'aside';
 
+
+.home-container{
+	background-image: $waves-icon, $start-pic ;
+	width: 100%;
+    height: auto;
+	padding-bottom: 500px;
+    background-repeat: no-repeat, no-repeat;
+    attachment: fixed;
+    background-position: center; 
+    }
+         
+
