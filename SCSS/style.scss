@@ -15,6 +15,9 @@ p{
     max-width: 800px;
     margin: auto;
 }
+header{
+    width: 100%;
+}
 
 .home-container {
     background-image: $waves-icon ,$start-pic;
@@ -31,6 +34,8 @@ p{
 }
 .medarbetar-container {
     @include flex-container;
+    background-color: $primary-color2;
+    color: $primary-color;
     div {
         background-color: $primary-color;
         color: black;
@@ -52,7 +57,7 @@ p{
 }
 
 input[type=text], textarea{
-    @include contact-form
+    @include contact-form;
     background-color: $primary-color;
 }
 
