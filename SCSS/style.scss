@@ -13,7 +13,7 @@
 
 p{
     max-width: 800px;
-    margin: auto;
+    text-align: justify;
 }
 header{
     width: 100%;
@@ -50,15 +50,19 @@ header{
     @include flex-container;
     background-color: $primary-color2;
     color: $primary-color;
+    justify-content: space-around;
+    div{
+        width: 350px;        
+    }
 }
 
 .kontakt-container{
     background-color: $primary-color;
 }
 
-input[type=text], textarea{
-    @include contact-form;
-    background-color: $primary-color;
-}
+//input[type=text], textarea{
+//    @include contact-form;
+//    background-color: $primary-color;
+//}
 
 
