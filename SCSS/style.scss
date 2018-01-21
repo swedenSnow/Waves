@@ -22,41 +22,71 @@ header{
 .home-container {
     background-image: $waves-icon ,$start-pic;
     width: 100%;
-    height: auto;
+    height: 100vh;;
     background-repeat: no-repeat,no-repeat;
     attachment: fixed;
     background-position: center;
+    background-size: auto, cover;
+
 }
-.om-oss-container {
+.about-us-container {
     @include flex-container;
     background-color: $primary-color2;
     color: $primary-color;
+    
+        p {
+        font-size: 12px;
+    }
 }
-.medarbetar-container {
-    @include flex-container;
-    background-color: $primary-color2;
-    color: $primary-color;
-    div {
+.employees-container 
+{
+    @extend .about-us-container;
+    section {
         background-color: $primary-color;
         color: black;
     }
-}
-.uppdrag-container {
-    @include flex-container;
-    background-color: $primary-color;
-
-}
-.tjanster-container {
-    @include flex-container;
-    background-color: $primary-color2;
-    color: $primary-color;
-    justify-content: space-around;
-    div{
-        width: 350px;        
+    @media #{$widthmobile}
+    {
+        flex-direction:row; 
+            section {
+                padding: 1px;
+                margin: 1px;
+        }
+            .picture-desktop{
+                display: none;
+         }
     }
 }
+.assignment-container {
+    @extend .about-us-container;
+    div {
+    background-color: white;
+    color: black;
 
-.kontakt-container{
+        }
+
+}
+.services-container {
+    @include flex-container;
+    background-color:$primary-color;  
+    justify-content: space-around;
+    
+    div{
+        width: 350px;     
+    background-color:$primary-color2;     
+    }
+
+}
+.desktop-usp{
+       @media #{$widthmobile}
+    {
+        display: none;
+    } 
+}
+
+    
+
+.contact-container{
     background-color: $primary-color;
 }
 
