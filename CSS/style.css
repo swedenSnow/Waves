@@ -69,6 +69,7 @@ header {
   flex-wrap: wrap;
   width: 100%;
   text-align: center;
+  background-color: #387284;
   color: #dacfc3;
 }
 
@@ -78,7 +79,7 @@ header {
 }
 
 .about-us-container p, .employees-container p, .assignment-container p {
-  font-size: 12px;
+  font-size: 0.7rem;
 }
 
 .employees-container section {
@@ -91,8 +92,8 @@ header {
     flex-direction: row;
   }
   .employees-container section {
-    padding: 1px;
-    margin: 1px;
+    padding: 0.4rem;
+    margin: 0.4rem;
   }
   .employees-container .picture-desktop {
     display: none;
