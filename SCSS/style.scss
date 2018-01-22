@@ -59,17 +59,16 @@ header{
 }
 .assignment-container {
     @extend .about-us-container;
-    div {
-    background-color: white;
-    color: black;
 
+        @media #{$widthmobile}
+    {
+        .picture-desktop{
+           display: none; 
         }
-
+}
 }
 .services-container {
-    @include flex-container;
-    background-color:$primary-color2;  
-    color:$primary-color;
+   @extend .about-us-container;
     
     div{
     width: 350px;     

@@ -63,7 +63,7 @@ header {
   background-size: auto, cover;
 }
 
-.about-us-container, .employees-container, .assignment-container {
+.about-us-container, .employees-container, .assignment-container, .services-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -73,12 +73,12 @@ header {
   color: #dacfc3;
 }
 
-.about-us-container div, .employees-container div, .assignment-container div {
+.about-us-container div, .employees-container div, .assignment-container div, .services-container div {
   margin: 15px;
   padding: 15px;
 }
 
-.about-us-container p, .employees-container p, .assignment-container p {
+.about-us-container p, .employees-container p, .assignment-container p, .services-container p {
   font-size: 0.8rem;
 }
 
@@ -100,24 +100,10 @@ header {
   }
 }
 
-.assignment-container div {
-  background-color: white;
-  color: black;
-}
-
-.services-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-  text-align: center;
-  background-color: #387284;
-  color: #dacfc3;
-}
-
-.services-container div {
-  margin: 15px;
-  padding: 15px;
+@media (max-width: 375px) {
+  .assignment-container .picture-desktop {
+    display: none;
+  }
 }
 
 .services-container div {
