@@ -31,11 +31,11 @@ header{
 }
 .about-us-container {
     @include flex-container;
-   
+    background-color: $primary-color2;
     color: $primary-color;
     
-        p {
-        font-size: 12px;
+    p {
+        font-size: 0.7rem;
     }
 }
 .employees-container 
@@ -49,8 +49,8 @@ header{
     {
         flex-direction:row; 
             section {
-                padding: 1px;
-                margin: 1px;
+                padding: 0.4rem;
+                margin: 0.4rem;
         }
             .picture-desktop{
                 display: none;
