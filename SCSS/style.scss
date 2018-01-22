@@ -31,7 +31,7 @@ header{
 }
 .about-us-container {
     @include flex-container;
-    background-color: $primary-color2;
+   
     color: $primary-color;
     
         p {
