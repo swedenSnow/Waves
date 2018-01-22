@@ -35,7 +35,7 @@ header{
     color: $primary-color;
     
     p {
-        font-size: 0.7rem;
+        font-size:$fontsize-mobile;
     }
 }
 .employees-container 
@@ -68,12 +68,22 @@ header{
 }
 .services-container {
     @include flex-container;
-    background-color:$primary-color;  
-    justify-content: space-around;
+    background-color:$primary-color2;  
+    color:$primary-color;
     
     div{
-        width: 350px;     
-    background-color:$primary-color2;     
+    width: 350px;     
+    background-color:$primary-color2; 
+    
+    p{    
+        font-size:$fontsize-mobile;
+    }
+    @media #{$widthmobile}
+    {
+        .picture-desktop{
+           display: none; 
+        }
+    }
     }
 
 }

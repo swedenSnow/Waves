@@ -79,7 +79,7 @@ header {
 }
 
 .about-us-container p, .employees-container p, .assignment-container p {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
 .employees-container section {
@@ -111,8 +111,8 @@ header {
   flex-wrap: wrap;
   width: 100%;
   text-align: center;
-  background-color: #dacfc3;
-  justify-content: space-around;
+  background-color: #387284;
+  color: #dacfc3;
 }
 
 .services-container div {
@@ -123,6 +123,16 @@ header {
 .services-container div {
   width: 350px;
   background-color: #387284;
+}
+
+.services-container div p {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 375px) {
+  .services-container div .picture-desktop {
+    display: none;
+  }
 }
 
 @media (max-width: 375px) {
