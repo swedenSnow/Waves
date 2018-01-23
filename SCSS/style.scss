@@ -73,6 +73,7 @@ img {
 @media screen and (min-width: 700px) {
     .assignment-container{
         flex-wrap: nowrap;
+
     
     }
     .services-container{
@@ -80,9 +81,12 @@ img {
     }
     }
 
-//input[type=text], textarea{
-//    @include contact-form;
-//    background-color: $primary-color;
-//}
+input[type=text], textarea{
+  @include contact-form;
+   background-color: $primary-color;
+}
 
+.contact-container{
+    padding: 20px;
+}
 
