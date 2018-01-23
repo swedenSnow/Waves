@@ -43,7 +43,7 @@ img {
 {   
     @extend .about-us-container;
     flex-flow: row nowrap;
-    section {
+    div {
         background-color: $primary-color;
         color: black;
     }
@@ -51,7 +51,6 @@ img {
 }
 .assignment-container {
     @extend .about-us-container;
-    flex-flow: column nowrap;
     background-color:$primary-color;
     color: black;
 

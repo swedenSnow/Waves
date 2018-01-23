@@ -79,21 +79,20 @@ img {
 }
 
 .about-us-container div, .employees-container div, .assignment-container div, .services-container div {
-  margin: 15px;
-  padding: 15px;
+  margin: 10px;
+  padding: 5px;
 }
 
 .employees-container {
   flex-flow: row nowrap;
 }
 
-.employees-container section {
+.employees-container div {
   background-color: #dacfc3;
   color: black;
 }
 
 .assignment-container {
-  flex-flow: column nowrap;
   background-color: #dacfc3;
   color: black;
 }
