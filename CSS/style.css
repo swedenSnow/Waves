@@ -53,6 +53,11 @@ header {
   width: 100%;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .home-container {
   background-image: url(../logos/waves_icon_300.png), url(../images/waves_para_mobile.jpg);
   width: 100%;
@@ -82,22 +87,13 @@ header {
   font-size: 0.8rem;
 }
 
+.employees-container {
+  flex-flow: row nowrap;
+}
+
 .employees-container section {
   background-color: #dacfc3;
   color: black;
-}
-
-@media (max-width: 375px) {
-  .employees-container {
-    flex-direction: row;
-  }
-  .employees-container section {
-    padding: 0.4rem;
-    margin: 0.4rem;
-  }
-  .employees-container .picture-desktop {
-    display: none;
-  }
 }
 
 @media (max-width: 375px) {
