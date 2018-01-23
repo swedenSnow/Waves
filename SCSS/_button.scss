@@ -1,0 +1,14 @@
+input[type=submit] {
+    background-color: $primary-color2;
+    padding: 10px 60px;
+    border: none;
+}
+
+input[type=submit]:hover {
+   background-color: saturate( $primary-color2, 20% );
+}
+
+.button{
+	display: flex;
+	justify-content: center;
+}
