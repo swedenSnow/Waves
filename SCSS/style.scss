@@ -55,29 +55,18 @@ img {
 }
 .assignment-container {
     @extend .about-us-container;
+    flex-flow: column wrap;
+    text-align: center;
+}
 
-        @media #{$widthmobile}
-    {
-        .picture-desktop{
-           display: none; 
-        }
-}
-}
 .services-container {
    @extend .about-us-container;
-    
     div{
     width: 350px;     
     background-color:$primary-color2; 
     
     p{    
         font-size:$fontsize-mobile;
-    }
-    @media #{$widthmobile}
-    {
-        .picture-desktop{
-           display: none; 
-        }
     }
     }
 

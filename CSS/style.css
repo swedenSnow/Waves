@@ -96,10 +96,9 @@ img {
   color: black;
 }
 
-@media (max-width: 375px) {
-  .assignment-container .picture-desktop {
-    display: none;
-  }
+.assignment-container {
+  flex-flow: column wrap;
+  text-align: center;
 }
 
 .services-container div {
@@ -109,12 +108,6 @@ img {
 
 .services-container div p {
   font-size: 0.8rem;
-}
-
-@media (max-width: 375px) {
-  .services-container div .picture-desktop {
-    display: none;
-  }
 }
 
 @media (max-width: 375px) {
