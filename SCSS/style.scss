@@ -15,9 +15,6 @@ p{
     max-width: 800px;
     text-align: justify;
 }
-header{
-    width: 100%;
-}
 
 img {
     max-width: 100%;
@@ -53,14 +50,11 @@ img {
     @extend .about-us-container;
     background-color:$primary-color;
     color: black;
-
     }
 
 .services-container {
    @extend .about-us-container;
-    
-    div{
-    width: 200px;     
+    div{    
     background-color:$primary-color2; 
     }
 
@@ -76,7 +70,15 @@ img {
     background-color: $primary-color;
 }
 
-
+@media screen and (min-width: 700px) {
+    .assignment-container{
+        flex-wrap: nowrap;
+    
+    }
+    .services-container{
+        flex-wrap: nowrap;
+    }
+    }
 
 //input[type=text], textarea{
 //    @include contact-form;

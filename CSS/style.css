@@ -49,10 +49,6 @@ p {
   text-align: justify;
 }
 
-header {
-  width: 100%;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -98,7 +94,6 @@ img {
 }
 
 .services-container div {
-  width: 200px;
   background-color: #387284;
 }
 
@@ -110,4 +105,13 @@ img {
 
 .contact-container {
   background-color: #dacfc3;
+}
+
+@media screen and (min-width: 700px) {
+  .assignment-container {
+    flex-wrap: nowrap;
+  }
+  .services-container {
+    flex-wrap: nowrap;
+  }
 }
