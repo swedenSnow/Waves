@@ -38,10 +38,6 @@ img {
     @include flex-container;
     background-color: $primary-color2;
     color: $primary-color;
-    
-    p {
-        font-size:$fontsize-mobile;
-    }
 }
 .employees-container 
 {   
@@ -55,19 +51,18 @@ img {
 }
 .assignment-container {
     @extend .about-us-container;
-    flex-flow: column wrap;
-    text-align: center;
-}
+    flex-flow: column nowrap;
+    background-color:$primary-color;
+    color: black;
+
+    }
 
 .services-container {
    @extend .about-us-container;
-    div{
-    width: 350px;     
-    background-color:$primary-color2; 
     
-    p{    
-        font-size:$fontsize-mobile;
-    }
+    div{
+    width: 200px;     
+    background-color:$primary-color2; 
     }
 
 }
@@ -76,13 +71,13 @@ img {
     {
         display: none;
     } 
-}
-
-    
+}   
 
 .contact-container{
     background-color: $primary-color;
 }
+
+
 
 //input[type=text], textarea{
 //    @include contact-form;
