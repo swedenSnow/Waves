@@ -31,6 +31,8 @@ img {
     background-size: auto, cover;
 
 }
+
+ 
 .about-us-container {
     @include flex-container;
     background-color: $primary-color2;
@@ -80,6 +82,11 @@ img {
         flex-wrap: nowrap;
     }
     }
+@media screen and (min-width: 800px) {
+    .home-container{
+        background-image: $waves-desk;
+    }
+}
 
 input[type=text], textarea{
   @include contact-form;
