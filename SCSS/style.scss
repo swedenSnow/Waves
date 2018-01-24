@@ -27,7 +27,10 @@ img {
     height: 100vh;;
     background-repeat: no-repeat,no-repeat;
     attachment: fixed;
-    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-position: 50% 36%;
     background-size: auto, cover;
 
 }
@@ -37,10 +40,15 @@ img {
     @include flex-container;
     background-color: $primary-color2;
     color: $primary-color;
+    height: 100vh;
+    @include padding-bot;
+
 }
 .employees-container 
 {   
-    @extend .about-us-container;
+    @include flex-container;
+    background-color: $primary-color2;
+    color: $primary-color;
     flex-flow: row nowrap;
     div {
         background-color: $primary-color;
@@ -58,6 +66,9 @@ img {
    @extend .about-us-container;
     div{    
     background-color:$primary-color2; 
+    }
+    .picture-desktop{
+        padding: 0 2rem;
     }
 
 }

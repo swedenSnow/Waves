@@ -3,14 +3,16 @@ nav{
 	ul{
 		width: 100%;
 		list-style-type: none;
+		display: flex;
+		
 	}
 	li{
-		float: left;	
+		padding: 4rem;
 	}
 	a{
 		color: black;
 		text-decoration: none;
-		padding: 10px;
+		// padding: 10px;
 		display: block;
 		text-align: center;
 

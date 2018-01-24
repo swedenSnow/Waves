@@ -22,3 +22,7 @@
     border-bottom: 2px solid black;
 
 }
+
+@mixin padding-bot{
+    padding-bottom: 2rem;
+}
