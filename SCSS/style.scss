@@ -60,6 +60,8 @@ img {
     @extend .about-us-container;
     background-color:$primary-color;
     color: black;
+   
+    
     }
 
 .services-container {
@@ -70,20 +72,25 @@ img {
     .picture-desktop{
         padding: 0 2rem;
     }
-
-}
 .desktop-usp{
-       @media #{$widthmobile}
-    {
+@extend .about-us-container;
+}
+}
+
+       @media #{$widthmobile}{
+     .desktop-usp{   
         display: none;
     } 
+    .usp-header{
+       display: none; 
+    }
 }   
 
 .contact-container{
     background-color: $primary-color;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 375px) {
     .assignment-container{
         flex-wrap: wrap;
  header {
@@ -92,9 +99,11 @@ img {
  }
  .assignment{
     width: 40%;
+
+ }
  }
 
-    }
+
     .services-container{
         flex-wrap: wrap;
         header{
@@ -105,11 +114,57 @@ img {
     }
     }
     }
+    @media screen and (max-width: 799px) {
+    .usp-header{
+       display: none; 
+   }
+}
 @media screen and (min-width: 800px) {
     .home-container{
         background-image: $waves-desk;
     }
+    .usp-header{
+        min-height: 50vh;
+    }
+    .services-container{
+
+       min-height: 50vh; 
+       background-color:$primary-color;
+
+    header{
+        display: none;
+    }
+    div{
+        padding:0 3rem;
+        color:white;
+       background-color:$primary-color; 
+    }
+    }
+
+.desktop-usp{
+    height: 100vh;
+
 }
+
+.uspar{
+    display: flex;
+    
+    flex-flow: row nowrap;
+    align-content:flex-end;
+    height: 40vh;
+    div{
+    padding: 1rem;
+    }
+    .usp-text{
+        background-color:$primary-color2;
+        padding: 1rem;
+        margin: 1rem;
+    }
+}
+
+
+}
+
 
 input[type=text], textarea{
   @include contact-form;
