@@ -11,26 +11,35 @@
 </head>
 <body>
 
+
     <!-- HEM  -->
+    <div class="topnav" id="myTopnav">
+  <a></a>
+  <a href="#home">Hem</a>
+  <a href="#about">Om oss</a>
+  <a href="#assignment">Uppdrag</a>
+  <a href="#services">tjänster</a>
+  <a href="#contact">Kontakt</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
 <main class="parallax">
+
+
+
     <header class="home-container">
-            <nav>
-
-                <ul>
-                    <li><a href="index.html">HEM</a></li>
-                    <li><a href="#about-us">OM OSS</a></li>
-                    <li><a href="#assignment">UPPDRAG</a></li>
-                    <li><a href="#services">TJÄNSTER</a></li>
-                    <li><a href="#contact">KONATKT</a></li>
-                </ul>
-            </nav>
-        
-    </header>
-
+<!--      <nav class="topnav" id="myTopnav">
+                    <a href="index.html">HEM</a>
+                    <a href="#about-us">OM OSS</a>
+                    <a href="#assignment">UPPDRAG</a>
+                    <a href="#services">TJÄNSTER</a>
+                    <a href="#contact">KONATKT</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </nav> -->
+</header>
     <!-- OM OSS -->
 
 
-    <section class="about-us-container">
+    <section class="about-us-container" id="about">
         <header>
            <h1>OM OSS</h1>
         </header>
@@ -221,6 +230,19 @@ Få hjälp med content och strategi hur ni vill synas på sociala medier.
         <p>SOLNA</p>
         <p>08-1234567</p>
     </footer>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
+</script>
+
 </body>
 
 </html>
