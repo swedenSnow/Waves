@@ -11,28 +11,19 @@
 @import 'aside';
 @import 'mixins';
 
-p{
-    max-width: 800px;
-    text-align: justify;
-}
 
-img {
-    max-width: 100%;
-    height: auto;   
-}
+
 
 .home-container {
     background-image: $waves-icon ,$start-pic;
     width: 100%;
-    min-height: 100vh;;
+    min-height: 80vh;;
     background-repeat: no-repeat,no-repeat;
-    attachment: fixed;
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    background-position: 50% 36%;
+    background-position: 50% 50%;
     background-size: auto, cover;
-
+    padding: 2rem;
 }
 
  
@@ -107,7 +98,17 @@ img {
     }
 @media screen and (min-width: 800px) {
     .home-container{
-        background-image: $waves-desk;
+        background-image: $waves-desk-small;
+  
+    }
+}
+
+@media screen and (max-width: 799px){
+    .nav{
+        display: none;
+    }
+    .parallax{
+        background: $primary-color;
     }
 }
 
