@@ -58,7 +58,7 @@ img {
 }
 .assignment-container {
     @extend .about-us-container;
-    background-color:$primary-color;
+    
     color: black;
    
     
@@ -122,6 +122,18 @@ img {
 @media screen and (min-width: 800px) {
     .home-container{
         background-image: $waves-desk;
+
+
+    }
+    .assignment-container{
+        
+        background: none;
+        .assignment{
+            background-color:$primary-color;
+            border: 5rem;
+
+        }
+        
     }
     .usp-header{
         min-height: 50vh;
@@ -153,7 +165,7 @@ img {
     align-content:flex-end;
     height: 40vh;
     div{
-    padding: 1rem;
+        padding: 1rem;
     }
     .usp-text{
         background-color:$primary-color2;
@@ -161,8 +173,6 @@ img {
         margin: 1rem;
     }
 }
-
-
 }
 
 
@@ -173,7 +183,6 @@ input[type=text], textarea{
 
 .contact-container{
     padding: 40px;
-
 }
 
 
