@@ -26,9 +26,7 @@
     float: right;
     display: block;
   }
-  .topnav {
-    width: 100%;
-  }
+ 
   .icon{
     color: black;
     padding: 14px 16px;
@@ -45,6 +43,7 @@
 @media screen and (max-width: 600px) {
   .topnav.responsive { position: fixed;
     background-color: $primary-color;
+    flex-direction:column;
   }
  
   .topnav.responsive a {
