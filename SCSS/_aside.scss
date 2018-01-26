@@ -1,0 +1,25 @@
+.slogan-cont{
+    min-height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+
+}
+
+.slogan-box{
+    color: $nav-color;
+    text-transform: uppercase;
+    letter-spacing: 0.8rem;;
+    text-align: center;
+    text-shadow: 2px 1px $start-shadow;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.span-strong{
+    color: $logo-color;
+    font-size: 1.5rem;
+}
