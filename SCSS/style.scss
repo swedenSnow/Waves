@@ -13,62 +13,176 @@
 
 
 
-
-
-
-.topnav .icon {
-  display: none;
+.home-container {
+    background-image: $waves-icon ,$start-pic;
+    width: 100%;
+    min-height: 80vh;;
+    background-repeat: no-repeat,no-repeat;
+    display: flex;
+    justify-content: center;
+    background-position: 50% 50%;
+    background-size: auto, cover;
+    padding: 2rem;
 }
 
-@media screen and (max-width: 600px) {
-  .topnav a 
-  {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
  
-  .icon{
+.about-us-container {
+    @include flex-container;
+    background-color: $primary-color2;
+    color: $primary-color;
+    min-height: 100vh;
+    @include padding-bot;
+
+}
+.employees-container 
+{   
+    @include flex-container;
+    background-color: $primary-color2;
+    color: $primary-color;
+    flex-flow: row nowrap;
+    div {
+        background-color: $primary-color;
+        color: black;
+    }
+
+}
+.assignment-container {
+    @extend .about-us-container;
+    
     color: black;
-    padding: 14px 16px;
-  text-decoration: none;
-  font-size: 1.5rem;
-  position: fixed;
-    right: 0;
-    top: 0;
-    float: right;
-    display: block;
-  }
+   
+    
+    }
+
+.services-container {
+   @extend .about-us-container;
+    div{    
+    background-color:$primary-color2; 
+    }
+    .picture-desktop{
+        padding: 0 2rem;
+    }
+.desktop-usp{
+@extend .about-us-container;
+}
 }
 
-@media screen and (max-width: 600px) {
-  .topnav.responsive { position: fixed;
+       @media #{$widthmobile}{
+     .desktop-usp{   
+        display: none;
+    } 
+    .usp-header{
+       display: none; 
+    }
+}   
+
+.contact-container{
     background-color: $primary-color;
-    flex-direction:column;
-  }
- 
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  font-family: $font-stack;
+}
 
-  }
-      .topnav.responsive a:hover {
-       background-color: lighten( $primary-color2, 30% );
+@media screen and (min-width: 375px) {
+    .assignment-container{
+        flex-wrap: wrap;
+ header {
+    width: 100%
+
+ }
+ .assignment{
+    width: 40%;
+
+ }
+ }
+
+
+    .services-container{
+        flex-wrap: wrap;
+        header{
+            width: 100%
+        }
+    .service{
+        width: 30%
+    }
+    }
+    }
+    @media screen and (max-width: 799px) {
+    .usp-header{
+       display: none; 
+   }
+}
+@media screen and (min-width: 800px) {
+    .home-container{
+
+        background-image: $waves-desk-small;
+  
+    }
+}
+
+@media screen and (max-width: 799px){
+    .nav{
+        display: none;
+    }
+    .parallax{
+        background: $primary-color;
+
+    }
+    .assignment-container{
+        
+        background: none;
+        .assignment{
+            background-color:$primary-color;
+            
+
+        }
+        
+    }
+    .usp-header{
+        min-height: 50vh;
+    }
+    .services-container{
+
+       min-height: 50vh; 
+       background-color:$primary-color;
+
+    header{
+        display: none;
+    }
+    div{
+        padding:0 3rem;
+        color:white;
+       background-color:$primary-color; 
+    }
+    }
+
+.desktop-usp{
+    height: 100vh;
+
+}
+
+.uspar{
+    display: flex;
+    
+    flex-flow: row nowrap;
+    align-content:flex-end;
+    height: 40vh;
+    div{
+        padding: 1rem;
+    }
+    .usp-text{
+        background-color:$primary-color2;
+        padding: 1rem;
+        margin: 1rem;
+    }
+}
 }
 
 
+input[type=text], textarea{
+  @include contact-form;
+   background-color: $primary-color;
 }
 
-
-p{
-    max-width: 800px;
-    text-align: justify;
+.contact-container{
+    padding: 40px;
 }
 
 
