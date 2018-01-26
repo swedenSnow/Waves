@@ -16,13 +16,14 @@
 
 <main class="parallax">
     <header class="home-container">
-            <nav class="nav">
-                <a href="index.html">hem</a>
-                <a href="#about-us">om oss</a>
-                <a href="#assignment">uppdrag</a>
-                <a href="#services">tjänster</a>
-                <a href="#contact">kontakt</a>
-            </nav>
+         <nav class="topnav" id="myTopnav">
+                    <a href="index.html">hem</a>
+                    <a href="#about">om oss</a>
+                    <a href="#assignment">uppdrag</a>
+                    <a href="#services">tjänster</a>
+                    <a href="#contact">kontakt</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </nav> 
             
     </header>
 
@@ -229,6 +230,7 @@ Få hjälp med content och strategi hur ni vill synas på sociala medier.
     </footer>
 
 <script>
+
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
