@@ -22,7 +22,7 @@
     justify-content: center;
     background-position: 50% 50%;
     background-size: auto, cover;
-    padding: 2rem;
+    //padding: 2rem;
 }
 
  
@@ -130,6 +130,39 @@ input[type=text], textarea {
      .desktop-usp{   
         display: none;
     } 
+  .topnav a {
+    display: none;
+
+  }
+  .topnav a.icon {
+    display: flex;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 14px 16px;
+    text-shadow: none;
+    color: black;  
+  }
+
+    .topnav.responsive { 
+    position: fixed;
+    background-color: $primary-color;
+    flex-direction:column;
+
+    a:not(:last-child){
+    display: flex;
+    padding: 14px 16px;
+    text-shadow: none;
+    width: 100%;
+    font-size: 1rem;
+    color: black;
+    letter-spacing: normal;
+    
+    &:hover{
+       background-color: lighten( $primary-color2, 30% );
+    }
+  }
+  }
 
 }   
 
