@@ -48,6 +48,7 @@
 }
 .assignment-container {
     @extend .about-us-container;
+    background-color: $primary-color;
     color: black;
     .assignment-picture{
         padding: $padding *2;
@@ -56,8 +57,8 @@
     }
 
 .services-container {
-   @include flex-container;
-background-color: $primary-color2;
+   @extend .about-us-container;
+        background-color: $primary-color2;
     header{
         width: 100%;
         color:white;
@@ -66,109 +67,112 @@ background-color: $primary-color2;
     .picture-services{
         padding: $padding;
     }
+    }
 .desktop-usp{
-@extend .about-us-container;
-}
+@include flex-container;
+    .uspar{
+        min-height: 100vh;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-end;
+        .usp-picture{
+            flex-grow: 1;
+
+        }
+        .usp-text{
+            background-color: $primary-color2;
+            flex-grow: 1;
+            padding: $padding;
+        }
+    }
+
+
 }
 .contact-container{
     background-color: $primary-color;
 }
 
-       @media #{$width-mobile}{
+@media #{$width-mobile}{
      .desktop-usp{   
         display: none;
     } 
 
 }   
 
+@media #{$width-padda}{
+
+    .assignment-container{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+            header {
+                 width: 100%;
+            }
+        .assignment{
+            width: 45%;
+                .assignment-picture{
+                    padding: $padding;
+                }
+        }
+    }
+    .desktop-usp{   
+        display: none;
+    } 
+ 
+    .services-container{
+        flex-wrap: wrap;
+            header{
+            width: 100%
+            }
+        .service{
+            width: 30%;
+            padding: 0;
+        }
+    }
+ }   
 
 @media #{$width-desktop}{
-    .assignment-container{
-        flex-wrap: wrap;
- header {
-    width: 100%
-
- }
- .assignment{
-    width: 40%;
-
- }
- }
-
-
-    .services-container{
-        flex-wrap: wrap;
-        header{
-            width: 100%
-        }
-    .service{
-        width: 30%
-    }
-    }
-    }
-
-@media screen and (min-width: 800px) {
     .home-container{
-
         background-image: $waves-desk-small;
-  
-    }
-}
-
-@media screen and (max-width: 799px){
-    .nav{
-        display: none;
-    }
-    .parallax{
-        background: $primary-color;
-
     }
     .assignment-container{
-        
         background: none;
-      
-            
-
-        
-        
-    }
-    .usp-header{
-        min-height: 50vh;
-    }
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;  
+            header{
+                width:100%;
+            }   
+        .assignment{
+            width: 40%;
+            min-height: 60vh;
+            background-color:$primary-color2;
+            border: $padding; 
+        }    
+    }  
     .services-container{
+        background: none;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;  
+            header{
+                width:100%;
+            }
+            .service{
 
-       min-height: 50vh; 
-     
-
-   
-    div{
-        padding:0 3rem;
-        color:white;
-      
-    }
-    }
-
-.desktop-usp{
-    height: 100vh;
-
+                width: 30%;
+                padding: 0;
+                background-color:$primary-color;
+                min-height: 40vh;
+                color:black;
+            }
+        }
 }
 
-.uspar{
-    display: flex;
-    
-    flex-flow: row nowrap;
-    align-content:flex-end;
-    height: 40vh;
-    div{
-        padding: 1rem;
-    }
-    .usp-text{
-        background-color:$primary-color2;
-        padding: 1rem;
-        margin: 1rem;
-    }
-}
-}
+
 
 
 input[type=text], textarea{
