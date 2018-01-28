@@ -48,39 +48,41 @@
 }
 .assignment-container {
     @extend .about-us-container;
-    
     color: black;
-   
+    .assignment-picture{
+        padding: $padding *2;
+    }
     
     }
 
 .services-container {
-   @extend .about-us-container;
-    div{    
-    background-color:$primary-color2; 
+   @include flex-container;
+background-color: $primary-color2;
+    header{
+        width: 100%;
+        color:white;
     }
-    .picture-desktop{
-        padding: 0 2rem;
+   
+    .picture-services{
+        padding: $padding;
     }
 .desktop-usp{
 @extend .about-us-container;
 }
 }
-
-       @media #{$widthmobile}{
-     .desktop-usp{   
-        display: none;
-    } 
-    .usp-header{
-       display: none; 
-    }
-}   
-
 .contact-container{
     background-color: $primary-color;
 }
 
-@media screen and (min-width: 375px) {
+       @media #{$width-mobile}{
+     .desktop-usp{   
+        display: none;
+    } 
+
+}   
+
+
+@media #{$width-desktop}{
     .assignment-container{
         flex-wrap: wrap;
  header {
@@ -104,11 +106,7 @@
     }
     }
     }
-    @media screen and (max-width: 799px) {
-    .usp-header{
-       display: none; 
-   }
-}
+
 @media screen and (min-width: 800px) {
     .home-container{
 
@@ -128,11 +126,10 @@
     .assignment-container{
         
         background: none;
-        .assignment{
-            background-color:$primary-color;
+      
             
 
-        }
+        
         
     }
     .usp-header{
@@ -141,15 +138,13 @@
     .services-container{
 
        min-height: 50vh; 
-       background-color:$primary-color;
+     
 
-    header{
-        display: none;
-    }
+   
     div{
         padding:0 3rem;
         color:white;
-       background-color:$primary-color; 
+      
     }
     }
 
