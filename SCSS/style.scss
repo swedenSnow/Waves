@@ -196,6 +196,39 @@ input[type=text], textarea {
             padding: 0;
         }
     }
+  .topnav a {
+    display: none;
+
+  }
+  .topnav a.icon {
+    display: flex;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 14px 16px;
+    text-shadow: none;
+    color: black;  
+  }
+
+    .topnav.responsive { 
+    position: fixed;
+    background-color: $primary-color;
+    flex-direction:column;
+
+    a:not(:last-child){
+    display: flex;
+    padding: 14px 16px;
+    text-shadow: none;
+    width: 100%;
+    font-size: 1rem;
+    color: black;
+    letter-spacing: normal;
+    
+    &:hover{
+       background-color: lighten( $primary-color2, 30% );
+    }
+  }
+  }
  }   
 
 @media #{$width-desktop}{
