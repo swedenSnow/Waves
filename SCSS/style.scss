@@ -73,9 +73,18 @@
     .uspar{
         min-height: 100vh;
         display:flex;
-        flex-wrap: wrap;
+        flex-wrap:wrap;
         justify-content: space-around;
         align-items: flex-end;
+        .header{
+            width: 100%;
+            min-height: 40vh;
+        }
+        content {
+
+            background-color: $primary-color;
+
+        }
         .usp-picture{
             flex-grow: 1;
 
