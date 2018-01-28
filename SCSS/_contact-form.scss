@@ -1,0 +1,59 @@
+input[type=text], textarea{
+  @include contact-form;
+   background-color: $primary-color;
+}
+
+.contact-container{
+     padding: 1rem;
+    p{
+    	display: none;
+    }
+
+    
+    input.contact-large, textarea.contact-large { 
+    	display: none; 
+    }
+    input.contact-small, textarea.contact-small { 
+    	display: flex; 
+    }
+
+}
+
+// DESKTOP CONTACT FORM
+
+@media screen and (min-width: 800px){
+	.contact-container{
+		max-width: 700px;
+        width: 100%;
+        margin: 0 auto;
+        p{
+        	display: flex;
+        	justify-content: center;
+        	padding: 1rem 0;
+        }
+        input.contact-small, label, textarea.contact-small { 
+        	display: none; 
+        }
+        input.contact-large, textarea.contact-large { 
+        	display: flex; 
+        }
+
+} 
+	input[type=text], textarea {
+    
+    padding: 0.5rem;
+    border: 2px solid black;
+    margin: 1rem 0.5rem;
+    resize: vertical;
+    color: white;
+    background-color: white;
+}
+textarea{
+	height: 100px;
+}
+
+  
+
+}
+
+

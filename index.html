@@ -206,17 +206,28 @@ Få hjälp med content och strategi hur ni vill synas på sociala medier.
     <header>
             <h2>KONTAKT</h2>
         </header>
+        <p>Du får snabbast hjälp om du mailar oss på support@waves.se eller fyller i formuläret.</p>
         <form action="/action_page.php">
             <label for="fnamn">Namn</label>
-            <input type="text" id="fnamn" name="namn">
+            <input type="text" id="fnamn" name="namn" class="contact-small">
+            <input type="text" placeholder="Ditt namn" id="fnamn" name="namn" class="contact-large">
+            
             <label for="foretag">Företag</label>
-            <input type="text" id="foretag" name="foretag">
+            <input type="text" id="foretag" name="foretag" class="contact-small">
+            <input type="text" placeholder="Ditt företag" id="foretag" name="foretag" class="contact-large">
+            
             <label for="epost">E-post</label>
-            <input type="text" id="epost" name="epost">
+            <input type="text" id="epost" name="epost" class="contact-small">
+            <input type="text" placeholder="E-postadress" id="epost" name="epost" class="contact-large">
+            
             <label for="telefon">Telefon</label>
-            <input type="text" id="telefon" name="telefon">
+            <input type="text" id="telefon" name="telefon" class="contact-small">
+            <input type="text" placeholder="Telefonnummer" id="telefon" name="telefon" class="contact-large">
+            
             <label for="subject">Meddelande</label>
-            <textarea id="subject" name="meddelande"></textarea>
+            <textarea id="subject" name="meddelande" class="contact-small"></textarea>
+            <textarea id="subject" placeholder="Meddelande" name="meddelande" class="contact-large"></textarea>
+
             <div class="button">
             <input type="submit" value="SKICKA">
             </div>

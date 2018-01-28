@@ -10,6 +10,7 @@
 @import 'footer';
 @import 'aside';
 @import 'mixins';
+@import 'contact-form';
 
 
 .home-container {
@@ -81,9 +82,6 @@
     }
 }   
 
-.contact-container{
-    background-color: $primary-color;
-}
 
 @media screen and (min-width: 800px) {
     .assignment-container{
@@ -181,14 +179,6 @@
 }
 
 
-input[type=text], textarea{
-  @include contact-form;
-   background-color: $primary-color;
-}
-
-.contact-container{
-    padding: 40px;
-}
 
 
 
