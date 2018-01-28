@@ -32,6 +32,12 @@
     color: $primary-color;
     min-height: 100vh;
     @include padding-bot;
+    a{
+        color: black;
+        &:hover{
+            color: $primary-color2;
+        }
+    }
 
 }
 .employees-container 
