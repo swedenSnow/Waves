@@ -72,27 +72,36 @@
 @include flex-container;
     .uspar{
         min-height: 100vh;
+        color:white;
+        background: none;
         display:flex;
-        flex-wrap:wrap;
+        flex-wrap: wrap;
         justify-content: space-around;
-        align-items: flex-end;
+        align-items: center;
         .header{
             width: 100%;
             min-height: 40vh;
         }
         content {
-
-            background-color: $primary-color;
-
-        }
-        .usp-picture{
-            flex-grow: 1;
-
-        }
-        .usp-text{
+            display:flex;
             background-color: $primary-color2;
+            padding: $padding; 
+        justify-content: center;
+        align-items: center;
+
+        }
+        
+            .usp-picture{
             flex-grow: 1;
+            min-width: 30%;
+
+        }
+            .usp-text{
+            background-color: $primary-color;
+            flex-grow: 2;
             padding: $padding;
+            color:black;
+            min-width: 60%
         }
     }
 
@@ -170,6 +179,7 @@ input[type=text], textarea {
         background-image: $waves-desk-small;
     }
     .assignment-container{
+        color:white;
         background: none;
         display:flex;
         flex-wrap: wrap;
@@ -186,11 +196,12 @@ input[type=text], textarea {
         }    
     }  
     .services-container{
+        color:white;
         background: none;
         display:flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        align-items: center;  
+        align-items: center; 
             header{
                 width:100%;
             }
@@ -198,9 +209,9 @@ input[type=text], textarea {
 
                 width: 30%;
                 padding: 0;
-                background-color:$primary-color;
+                background-color:$primary-color2;
                 min-height: 40vh;
-                color:black;
+              
             }
         }
                .contact-container {
