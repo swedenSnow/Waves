@@ -63,17 +63,34 @@
     }
 
 .services-container {
-   @extend .about-us-container;
-        background-color: $primary-color2;
+    @include flex-container;
+    background-color: $primary-color2;
+    
+    min-height: 100vh;
+    @include padding-bot;
+    background-color: $primary-color2;
     header{
         width: 100%;
         color:white;
     }
-   
-    .picture-services{
-        padding: $padding;
+   .service{
+        a:link {
+            text-decoration: white;
+        }
+        a:visited {
+            text-decoration: white;
+        }
+        a:hover {
+            text-decoration: white;
+        }
+        a:active {
+            text-decoration: white;
+        }    
+        .picture-services{
+            padding: $padding;
+        }
     }
-    }
+}
 .desktop-usp{
 @include flex-container;
     .uspar{
@@ -183,7 +200,8 @@ input[type=text], textarea {
 
 @media #{$width-padda}{
 
-    .assignment-container{
+    .assignment-backgrund{
+
         display: flex;
         flex-direction: row;
         padding: 0;
@@ -251,24 +269,33 @@ input[type=text], textarea {
         background-image: $waves-desk-small;
     }
     .assignment-container{
-        color:white;
         background: none;
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;  
-            header{
+            .assignment-backgrund{
+                background-color: $primary-color;
+                color:white;
                 width:100%;
-            }   
+                display:flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: center;  
+                margin: 0;
+                padding: 0;
+                    header{
+                        width:100%;
+                    } 
+             
+            }  
         .assignment{
             width: 40%;
+            margin-top: -30rem;
             min-height: 60vh;
+            padding: 0;
             background-color:$primary-color2;
             border: $padding; 
         }    
     }  
     .services-container{
-        color:white;
+      
         background: none;
         display:flex;
         flex-wrap: wrap;
