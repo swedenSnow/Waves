@@ -110,7 +110,7 @@
             width: 100%;
             min-height: 40vh;
         }
-        content {
+        .usp-container {
             display:flex;
             background-color: $primary-color2;
             padding: $padding; 
@@ -315,7 +315,7 @@ footer{
         .assignment{
             width: 40%;
             margin-top: -20rem;
-            min-height: 50vh;
+            min-height: 35vh;
             padding: 0;
             background-color:$primary-color2;
             border: $padding;
