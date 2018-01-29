@@ -1,52 +1,52 @@
-footer{
-    min-height: 10vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: $primary-color2;
-    text-transform: uppercase;
-    }
+// footer{
+//     min-height: 10vh;
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-around;
+//     background-color: $primary-color2;
+//     text-transform: uppercase;
+//     }
 
-%foot-shared{
-color: $nav-color;
-text-decoration: none;
-text-align: center;
-font-size:0.5rem;
-letter-spacing: 5px;
-text-shadow: 1px 1px $start-shadow;
+// %foot-shared{
+// color: $nav-color;
+// text-decoration: none;
+// text-align: center;
+// font-size:0.5rem;
+// letter-spacing: 5px;
+// text-shadow: 1px 1px $start-shadow;
 
     
-    a{
-        text-decoration: none;
-        font-size:$fontsize-mobile;
-        color: $logo-color;
-    &:visited{
-        color: $logo-color;
-    }
-    &:hover{
-        font-size: 1rem;
-        transition: all 400ms;
-    }
+//     a{
+//         text-decoration: none;
+//         font-size:$fontsize-mobile;
+//         color: $logo-color;
+//     &:visited{
+//         color: $logo-color;
+//     }
+//     &:hover{
+//         font-size: 1rem;
+//         transition: all 400ms;
+//     }
         
-}  
+// }  
 
-}
+// }
 
-.foot-contact{
-    min-width: 33.33%;
-    @extend %foot-shared;
+// .foot-contact{
+//     min-width: 33.33%;
+//     @extend %foot-shared;
 
  
-}
+// }
 
-.foot-adress{
-    min-width: 33.33%;
-    @extend %foot-shared;
+// .foot-adress{
+//     min-width: 33.33%;
+//     @extend %foot-shared;
 
-}
+// }
 
-.foot-follow{
-    min-width: 33.33%;
-    @extend %foot-shared;
+// .foot-follow{
+//     min-width: 33.33%;
+//     @extend %foot-shared;
 
-}
+// }
