@@ -30,7 +30,7 @@
 .about-us-container {
     @include flex-container;
     background-color: $primary-color2;
-    color: $nav-color;
+    color: $primary-color;
     min-height: 100vh;
     @include padding-bot;
     a{
@@ -175,6 +175,7 @@ input[type=text], textarea {
     min-height: 100vh;
 }
 footer{
+
     font-size: $fontsize-mobile;
 }
      .desktop-usp{   
@@ -288,12 +289,12 @@ footer{
  }   
 
 @media #{$width-desktop}{
+    
     .home-container{
         background-image: $waves-desk-small;
     }
     .assignment-container{
         background: none;
-        color: $nav-color;
             .assignment-backgrund{
                 background-color: $primary-color;
                 color:white;
@@ -311,14 +312,11 @@ footer{
             }  
         .assignment{
             width: 40%;
-            margin-top: -20rem;
-            min-height: 40vh;
+            margin-top: -30rem;
+            min-height: 60vh;
             padding: 0;
             background-color:$primary-color2;
             border: $padding; 
-            .assignment-picture{
-                padding: 0;
-            }
         }    
     }  
     .services-container{
@@ -366,6 +364,7 @@ footer{
     textarea {
         max-height: 100px;
     }
+
 }
 
 
