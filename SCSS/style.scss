@@ -30,7 +30,7 @@
 .about-us-container {
     @include flex-container;
     background-color: $primary-color2;
-    color: $primary-color;
+    color: $nav-color;
     min-height: 100vh;
     @include padding-bot;
     a{
@@ -293,6 +293,7 @@ footer{
     }
     .assignment-container{
         background: none;
+        color: $nav-color;
             .assignment-backgrund{
                 background-color: $primary-color;
                 color:white;
@@ -310,11 +311,14 @@ footer{
             }  
         .assignment{
             width: 40%;
-            margin-top: -30rem;
-            min-height: 60vh;
+            margin-top: -20rem;
+            min-height: 40vh;
             padding: 0;
             background-color:$primary-color2;
             border: $padding; 
+            .assignment-picture{
+                padding: 0;
+            }
         }    
     }  
     .services-container{
