@@ -142,6 +142,7 @@
     flex-wrap:wrap;
     justify-content:center;
     min-width: 100%;
+    min-height: 90vh;
     .contact-text {
         display: none;
     }
@@ -167,6 +168,15 @@ input[type=text], textarea {
 
 
 @media #{$width-mobile}{
+    .slogan-cont{
+    display: none;
+}
+.home-container{
+    min-height: 100vh;
+}
+footer{
+    font-size: $fontsize-mobile;
+}
      .desktop-usp{   
         display: none;
     } 
@@ -207,7 +217,12 @@ input[type=text], textarea {
 }   
 
 @media #{$width-padda}{
-
+.slogan-cont{
+    display: none;
+}
+.home-container{
+    min-height: 100vh;
+}
     .assignment-backgrund{
 
         display: flex;
