@@ -26,3 +26,12 @@
 @mixin padding-bot{
     padding-bottom: 2rem;
 }
+
+@mixin footer{
+    color: $nav-color;
+    text-shadow: 2px 1px $start-shadow;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.25rem;
+    letter-spacing: 6px;
+}
