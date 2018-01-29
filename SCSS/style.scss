@@ -110,7 +110,7 @@
             width: 100%;
             min-height: 40vh;
         }
-        content {
+        .usp-container {
             display:flex;
             background-color: $primary-color2;
             padding: $padding; 
@@ -295,6 +295,8 @@ footer{
     }
     .assignment-container{
         background: none;
+        padding:0;
+
             .assignment-backgrund{
                 background-color: $primary-color;
                 color:white;
@@ -312,11 +314,14 @@ footer{
             }  
         .assignment{
             width: 40%;
-            margin-top: -30rem;
-            min-height: 60vh;
+            margin-top: -20rem;
+            min-height: 35vh;
             padding: 0;
             background-color:$primary-color2;
-            border: $padding; 
+            border: $padding;
+            .assignment-picture{
+                padding:0;
+            } 
         }    
     }  
     .services-container{
