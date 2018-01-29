@@ -159,6 +159,9 @@
         min-height: 5rem;
     }
 }
+.contact-head{
+    text-align: center; 
+}
 input[type=text], textarea {
     padding: 0.5rem 5rem;
     border: none;
@@ -218,6 +221,13 @@ footer{
 }   
 
 @media #{$width-padda}{
+p{
+    font-size: $fontsize-tablet;
+
+}
+h2{
+    text-transform: uppercase;
+}
 .slogan-cont{
     display: none;
 }
@@ -289,6 +299,14 @@ footer{
  }   
 
 @media #{$width-desktop}{
+
+    p{
+        font-size: $fontsize-desk;
+    
+    }
+    h2{
+        text-transform: uppercase;
+    }
     
     .home-container{
         background-image: $waves-desk-small;
