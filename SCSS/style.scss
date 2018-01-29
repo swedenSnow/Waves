@@ -274,6 +274,8 @@ input[type=text], textarea {
     }
     .assignment-container{
         background: none;
+        padding:0;
+
             .assignment-backgrund{
                 background-color: $primary-color;
                 color:white;
@@ -291,11 +293,14 @@ input[type=text], textarea {
             }  
         .assignment{
             width: 40%;
-            margin-top: -30rem;
-            min-height: 60vh;
+            margin-top: -20rem;
+            min-height: 50vh;
             padding: 0;
             background-color:$primary-color2;
-            border: $padding; 
+            border: $padding;
+            .assignment-picture{
+                padding:0;
+            } 
         }    
     }  
     .services-container{
