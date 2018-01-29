@@ -2,6 +2,7 @@
 // into partials to manage it more easily. 
 
 // Partials
+@supports (display: flex){
 @import 'variabel';
 @import 'reset';
 @import 'navbar';
@@ -11,18 +12,13 @@
 @import 'aside';
 @import 'mixins';
 
-
-
 .home-container {
+    @include flex-container;
     background-image: $waves-icon ,$start-pic;
-    width: 100%;
     min-height: 80vh;;
     background-repeat: no-repeat,no-repeat;
-    display: flex;
-    justify-content: center;
     background-position: 50% 50%;
     background-size: auto, cover;
-    //padding: 2rem;
 }
 
 
@@ -39,6 +35,9 @@
             color: $primary-color2;
         }
     }
+    .about-box{
+        padding: 0 2rem;
+    }
 
 }
 .employees-container 
@@ -54,12 +53,10 @@
 
 }
 .assignment-container {
-    @extend .about-us-container;
+    @include flex-container;
+    min-height: 100vh;
     background-color: $primary-color;
     color: black;
-    .assignment-picture{
-        padding: $padding *2;
-    }
     
     }
 
@@ -171,6 +168,10 @@ input[type=text], textarea {
 
 
 @media #{$width-mobile}{
+
+h1,h2,h3{
+        text-transform: uppercase;
+    }
     .slogan-cont{
     display: none;
 }
@@ -187,6 +188,10 @@ footer{
   .topnav a {
     display: none;
 
+  }
+
+  .foot-adress{
+      display: none;
   }
   .topnav a.icon {
     display: flex;
@@ -220,12 +225,12 @@ footer{
 
 }   
 
-@media #{$width-padda}{
+@media #{$width-tablet}{
 p{
     font-size: $fontsize-tablet;
 
 }
-h2{
+h1,h2,h3{
     text-transform: uppercase;
 }
 .slogan-cont{
@@ -304,9 +309,19 @@ h2{
         font-size: $fontsize-desk;
     
     }
-    h2{
+    h1, h2, h3{
         text-transform: uppercase;
     }
+
+    .about-us-container{
+       @include flex-column;
+        .about-box{
+            width: 50%;
+            align-self: center;
+            
+        }
+    }
+
     
     .home-container{
         background-image: $waves-desk-small;
@@ -389,6 +404,9 @@ h2{
     }
 
 }
+
+}
+
 
 
 

@@ -13,6 +13,16 @@
 
 }
 
+@mixin flex-column{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+@mixin flex-normal{
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
 @mixin contact-form{
 	width: 100%;
     padding: 12px 20px;
