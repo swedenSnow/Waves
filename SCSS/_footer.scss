@@ -1,0 +1,50 @@
+footer{
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    background-color: $primary-color2;
+    text-transform: uppercase;
+   
+}
+
+%foot-shared{
+color: $nav-color;
+text-decoration: none;
+text-align: center;
+font-size: 1rem;
+letter-spacing: 5px;
+text-shadow: 1px 1px $start-shadow;
+    
+    a{
+        text-decoration: none;
+        font-size: 0.8rem;
+        color: $logo-color;
+    &:visited{
+        color: $logo-color;
+    }
+    &:hover{
+        font-size: 1rem;
+        transition: all 400ms;
+    }
+        
+}  
+
+}
+
+.foot-contact{
+    min-width: 33.33%;
+    @extend %foot-shared;
+ 
+}
+
+.foot-adress{
+    min-width: 33.33%;
+    @extend %foot-shared;
+
+}
+
+.foot-follow{
+    min-width: 33.33%;
+    @extend %foot-shared;
+
+}

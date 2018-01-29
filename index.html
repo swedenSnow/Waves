@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
     <title>Waves</title>
 </head>
 <body>
@@ -16,8 +17,17 @@
 
 <main class="parallax">
     <header class="home-container">
+
+<!--             <nav class="nav-down">
+                <a href="index.html"> <img src="logos/waves_icon_50.png" alt="wavesicon" class="small-icon"></a>
+                <a href="#about-us">om oss</a>
+                <a href="#assignment">uppdrag</a>
+                <a href="#services">tjänster</a>
+                <a href="#contact">kontakt</a>
+            </nav>  --> 
+
               <nav class="topnav" id="myTopnav">
-                    <a href="index.html">hem</a>
+                    <a href="index.html"> <img src="logos/waves_icon_50.png" alt="wavesicon" class="small-icon"></a>
                     <a href="#about-us">om oss</a>
                     <a href="#assignment">uppdrag</a>
                     <a href="#services">tjänster</a>
@@ -25,6 +35,7 @@
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
             </nav>
             
+
     </header>
 
     <section class="slogan-cont">
@@ -100,12 +111,12 @@
         </div>
     </div>
         </section>
-    </section>
+   
 
     <!-- TJÄNSTER -->
 
 
-</div>
+
 
     <section id="services" class="services-container">
         <header>
@@ -140,7 +151,7 @@
         <section class="uspar" id="usp1">
             <div class="header">
             </div>
-            <content>
+            <div>
             <div class= "usp-picture">
                 <img src="images/mobil_device.png" alt="mobil/tablet" >
             </div>
@@ -152,13 +163,13 @@
                 Vi bygger nya moderna hemsidor åt företag, stora som små, snabbt och prisvärt. Vi hjälper dig att få din hemsida att leverera oavsett vilken typ av webbläsare eller vilken typ av enhet dina kunder sitter vid. Allt för att dina kunder så få en sömlös upplevelse.
                 </p>
             </div>
-            </content>
+            </div>
         </section>
 
         <section class="uspar" id="usp2">
                         <div class="header">
             </div>
-            <content>
+            <div>
 
             <div class= "usp-picture">
                 <img src="images/magnifying_glass.png" alt="Förstoringsglas" >
@@ -169,22 +180,22 @@
                 </header>
                 <p>Waves är en enkel webbsida lösning som ger dig kundstocken att växa i.Sökmotoroptimering, findability, konverteringar - allt som gör att hemsidan blir effektivare.Vi jobbar med kreativa och hållbara digitala lösningar och detta gör vi genom att mixa utvecklare, designers, UX:are, strateger, SEO optimering eller vilken kompetens som nu krävs för att uppdraget ska bli framgångsrikt. Hos oss får du snygga strategiska helhetslösningar.</p>
             </div>
-        </content>
+        </div>
         </section>
         <section class="uspar" id="usp3">
                         <div class="header">
             </div>
-            <content>
+            <div>
             <div class= "usp-picture">
                 <img src="images/comunication_icon.png" alt="Kommunikation">
             </div>
             <div class="usp-text">
                 <header>
-                    <h1>Hos oss hittar du all funktion du behöver</h1>
+                    <h2>Hos oss hittar du all funktion du behöver</h2>
                 </header>
                 <p>Formulär, chatt, bilder, vilka är vi och mycket mer. Vi hjälper er att få fram bra formulär så ni får ut och får fram det ni behöver.Med Waves chatt får du kontakt direkt med dina kunder. Träffa våra designers och tillsammans få fram det bästa bilderna för just din hemsida. Få hjälp med content och strategi hur ni vill synas på sociala medier.</p>
             </div>
-        </content>
+        </div>
         </section> 
         </section>
 
@@ -195,7 +206,9 @@
     <header>
             <h2>KONTAKT</h2>
         </header>
+        <div class="contact-text">
          <p>Du får snabbast hjälp om du mailar oss på support@waves.se eller fyller i formuläret.</p>
+         </div>
         <form action="/action_page.php">
             <label for="fnamn">Namn</label>
             <input type="text" id="fnamn" name="namn" class="contact-small">
@@ -224,20 +237,73 @@
     </section>
     </main>
     <footer>
-        <p>Tomtebodavägen 2</p>
-        <p>SOLNA</p>
-        <p>08-1234567</p>
+        <div class="foot-contact">
+            <h3>Kontakt</h3>
+            <p>Email</p>
+            <a href="index.html">info@waves.se</a>
+        </div>
+        <div class="foot-adress">
+            <h3>Adress</h3>
+            <p>Tomtebodavägen 2</p>
+            <p>Solna</p>
+        </div>
+        <div class="foot-follow">
+            <h3>Följ oss</h3>
+            <p>Facebook</p>
+            <p>Twitter</p>
+        </div>
     </footer>
 
 <script>
+
 function myFunction() {
-    var x = document.getElementById("myTopnav");
+     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
         x.className += " responsive";
-    } else {
+     } else {
         x.className = "topnav";
     }
 }
+
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('nav').outerHeight();
+
+$(window).scroll(function(event) {
+  didScroll = true;
+});
+
+setInterval(function() {
+  if (didScroll) {
+    hasScrolled();
+    didScroll = false;
+  }
+}, 250);
+
+function hasScrolled() {
+  var st = $(this).scrollTop();
+
+  // Make sure they scroll more than delta
+  if (Math.abs(lastScrollTop - st) <= delta)
+    return;
+
+  // If they scrolled down and are past the navbar, add class .nav-up.
+  // This is necessary so you never see what is "behind" the navbar.
+  if (st > lastScrollTop && st > navbarHeight) {
+    // Scroll Down
+    $('nav').removeClass('topnav').addClass('nav-up');
+  } else {
+    // Scroll Up
+    if (st + $(window).height() < $(document).height()) {
+      $('nav').removeClass('nav-up').addClass('topnav');
+    }
+  }
+
+  lastScrollTop = st;
+}
+
 
 </script>
 
