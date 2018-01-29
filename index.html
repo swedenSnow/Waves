@@ -16,6 +16,7 @@
 
 <main class="parallax">
     <header class="home-container">
+<<<<<<< HEAD
             <nav class="nav-down">
                 <a href="index.html"> <img src="logos/waves_icon_50.png" alt="wavesicon" class="small-icon"></a>
                 <a href="#about-us">om oss</a>
@@ -23,6 +24,17 @@
                 <a href="#services">tjänster</a>
                 <a href="#contact">kontakt</a>
             </nav>  
+=======
+              <nav class="topnav" id="myTopnav">
+                    <a href="index.html">hem</a>
+                    <a href="#about-us">om oss</a>
+                    <a href="#assignment">uppdrag</a>
+                    <a href="#services">tjänster</a>
+                    <a href="#contact">kontakt</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </nav>
+            
+>>>>>>> f019b9eeeda5f209283709d1fb49a046c7256d9c
     </header>
 
     <section class="slogan-cont">
@@ -75,10 +87,10 @@
         <header>
             <h2>Uppdrag</h2>
         </header>
-        
+        <div class="assignment-backgrund">
         <div class="assignment">
             <div>
-                <img src="images/marigold_logo.png" alt="Marigold logga" class=picture-desktop>
+                <img src="images/marigold_logo.png" alt="Marigold logga" class=assignment-picture>
             </div>
             <div>
             <p>Passion och kreativitet är vad MariGold vill förmedla i deras nystartade företag med arkitekter. De 10 vassa medarbetarna vill synas och visa upp vad de kan och har åstadkommit. Ett spännande företag med många ideér.</p>
@@ -88,7 +100,7 @@
         </div>
         <div class="assignment">
             <div>
-                <img src="images/epsilon.png" alt="Epsilon logga" class=picture-desktop>
+                <img src="images/epsilon.png" alt="Epsilon logga" class=assignment-picture>
             </div>
             <div>
             <p>Epsilon inriktar sig på markarbete och stenläggning. Epsilons kundgrupp är privatkunder eller företag som behöver göra ingrepp i marken, allt från grävning och läggning av nya rör, bygga rabatter eller gräva en damm eller pool.</p>
@@ -96,107 +108,96 @@
             <p>”Vi kan varmt rekommendera Waves när ni ska producera en ny hemsida eller utveckla er befintliga.”</p>
             </div>
         </div>
+    </div>
         </section>
     </section>
 
     <!-- TJÄNSTER -->
 
-<div class="usp-header">
-            <header>
-            <h2>tjänster</h2>
-        </header>
+
 </div>
-<div class="usp">
+
     <section id="services" class="services-container">
         <header>
             <h2>tjänster</h2>
         </header>
-        <div class="service">
-            <img src="images/mobil-divices_110.png" alt="mobil/tablet" class="picture-desktop">
+        <a href="#usp1"  class="service">
+            <img src="images/mobil-divices_110.png" alt="mobil/tablet" class="picture-services">
           
             <h3>Mobilanpassad</h3>
             <p>Din hemsida kommer automatiskt att se bra ut i såväl dator som mobiltelefon och surfplatta.</p>
-        </div>
-        <div class="service">
-            <img src="images/magnifying_110.png" alt="Förstoringsglas" class="picture-desktop">
+        </a>
+        <a href="#usp2"  class="service">
+            <img src="images/magnifying_110.png" alt="Förstoringsglas" class="picture-services">
             
             <h3>Vi hjälper företaget att växa och synas (SEO)</h3>
             <p>Sökmotoroptimering, findability, konverteringar - allt som gör att hemsidan blir effektivare.</p>
-        </div>
-        <div class="service">
-            <img src="images/communication_100.png" alt="Kommunikation" class="picture-desktop">
+        </a>
+        <a href="#usp3"  class="service">
+            <img src="images/communication_100.png" alt="Kommunikation" class="picture-services">
             <h3>Hos oss hittar du all funktion du behöver</h3>
             <p>Vi hjälper er att få fram bra formulär så ni får ut och får fram det ni behöver.</p>
-        </div>
+        </a>
     </section>
-</div>
+
         <!-- MOBILANPASSAD -->
     <!-- TJÄNSTER DESKTOP VERSION -->
     
 
     <section class="desktop-usp">
-        <section class="uspar">
 
-            <div>
-                <img src="images/mobil_device.png" alt="mobil/tablet">
+
+        <section class="uspar" id="usp1">
+            <div class="header">
+            </div>
+            <content>
+            <div class= "usp-picture">
+                <img src="images/mobil_device.png" alt="mobil/tablet" >
             </div>
             <div class="usp-text">
-                              <header>
-                <h2>Mobilanpassad</h2>
-                <p>
-
-
-Din hemsida kommer automatiskt att se bra ut i såväl dator som mobiltelefon och surfplatta.
-
-Vi bygger nya moderna hemsidor åt företag, stora som små, snabbt och prisvärt.
-Vi hjälper dig att få din hemsida att leverera oavsett vilken typ av webbläsare eller vilken typ av enhet dina kunder sitter vid. Allt för att dina kunder så få en sömlös upplevelse.
-.</p>
+                <header>
+                    <h2>Mobilanpassad</h2>
+                </header>
+                <p> Din hemsida kommer automatiskt att se bra ut i såväl dator som mobiltelefon och surfplatta.
+                Vi bygger nya moderna hemsidor åt företag, stora som små, snabbt och prisvärt. Vi hjälper dig att få din hemsida att leverera oavsett vilken typ av webbläsare eller vilken typ av enhet dina kunder sitter vid. Allt för att dina kunder så få en sömlös upplevelse.
+                </p>
             </div>
+            </content>
         </section>
-        </section>
-        <section class="desktop-usp">
-        <section class="uspar">
 
-            <div>
-                <img src="images/magnifying_glass.png" alt="Förstoringsglas">
-                </div>
-                <div class="usp-text">
-              <header>
-                <h2>Vi hjälper företaget att växa och synas </h2>
-            </header>
-                <p>
- 
-Waves är en enkel webbsida lösning som ger dig kundstocken att växa i.
-
-Sökmotoroptimering, findability, konverteringar - allt som gör att hemsidan blir effektivare.
-Vi jobbar med kreativa och hållbara digitala lösningar och detta gör vi genom att mixa utvecklare, designers, UX:are, strateger, SEO optimering eller vilken kompetens som nu krävs för att uppdraget ska bli framgångsrikt. Hos oss får du snygga strategiska helhetslösningar.</p>
+        <section class="uspar" id="usp2">
+                        <div class="header">
             </div>
-        </section>
-        </section>
-     <section class="desktop-usp">   
-    <section class="uspar">
-        
+            <content>
 
-            <div>
+            <div class= "usp-picture">
+                <img src="images/magnifying_glass.png" alt="Förstoringsglas" >
+            </div>
+            <div class="usp-text">
+                <header>
+                    <h2>Vi hjälper företaget att växa och synas </h2>
+                </header>
+                <p>Waves är en enkel webbsida lösning som ger dig kundstocken att växa i.Sökmotoroptimering, findability, konverteringar - allt som gör att hemsidan blir effektivare.Vi jobbar med kreativa och hållbara digitala lösningar och detta gör vi genom att mixa utvecklare, designers, UX:are, strateger, SEO optimering eller vilken kompetens som nu krävs för att uppdraget ska bli framgångsrikt. Hos oss får du snygga strategiska helhetslösningar.</p>
+            </div>
+        </content>
+        </section>
+        <section class="uspar" id="usp3">
+                        <div class="header">
+            </div>
+            <content>
+            <div class= "usp-picture">
                 <img src="images/comunication_icon.png" alt="Kommunikation">
-                </div>
-                <div class="usp-text">
-          <header>
-                <h1>Hos oss hittar du all funktion du behöver</h1>
-            </header>
-                <p>
-
-Formulär, chatt, bilder, vilka är vi och mycket mer.
-
-Vi hjälper er att få fram bra formulär så ni får ut och får fram det ni behöver.
-Med Waves chatt får du kontakt direkt med dina kunder. 
-Träffa våra designers och tillsammans få fram det bästa bilderna för just din hemsida
-Få hjälp med content och strategi hur ni vill synas på sociala medier.
-</p>
             </div>
+            <div class="usp-text">
+                <header>
+                    <h1>Hos oss hittar du all funktion du behöver</h1>
+                </header>
+                <p>Formulär, chatt, bilder, vilka är vi och mycket mer. Vi hjälper er att få fram bra formulär så ni får ut och får fram det ni behöver.Med Waves chatt får du kontakt direkt med dina kunder. Träffa våra designers och tillsammans få fram det bästa bilderna för just din hemsida. Få hjälp med content och strategi hur ni vill synas på sociala medier.</p>
+            </div>
+        </content>
         </section> 
         </section>
-</section>
+
 
     <!-- KONTAKT -->
 
@@ -204,17 +205,30 @@ Få hjälp med content och strategi hur ni vill synas på sociala medier.
     <header>
             <h2>KONTAKT</h2>
         </header>
+        <div class="contact-text">
+         <p>Du får snabbast hjälp om du mailar oss på support@waves.se eller fyller i formuläret.</p>
+         </div>
         <form action="/action_page.php">
             <label for="fnamn">Namn</label>
-            <input type="text" id="fnamn" name="namn">
+            <input type="text" id="fnamn" name="namn" class="contact-small">
+            <input type="text" placeholder="Ditt namn" id="fnamn" name="namn" class="contact-large">
+            
             <label for="foretag">Företag</label>
-            <input type="text" id="foretag" name="foretag">
+            <input type="text" id="foretag" name="foretag" class="contact-small">
+            <input type="text" placeholder="Ditt företag" id="foretag" name="foretag" class="contact-large">
+            
             <label for="epost">E-post</label>
-            <input type="text" id="epost" name="epost">
+            <input type="text" id="epost" name="epost" class="contact-small">
+            <input type="text" placeholder="E-postadress" id="epost" name="epost" class="contact-large">
+            
             <label for="telefon">Telefon</label>
-            <input type="text" id="telefon" name="telefon">
+            <input type="text" id="telefon" name="telefon" class="contact-small">
+            <input type="text" placeholder="Telefonnummer" id="telefon" name="telefon" class="contact-large">
+            
             <label for="subject">Meddelande</label>
-            <textarea id="subject" name="meddelande"></textarea>
+            <textarea id="subject" name="meddelande" class="contact-small"></textarea>
+            <textarea id="subject" placeholder="Meddelande" name="meddelande" class="contact-large"></textarea>
+
             <div class="button">
             <input type="submit" value="SKICKA">
             </div>
