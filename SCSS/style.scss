@@ -73,23 +73,27 @@
         width: 100%;
         color:white;
     }
-   .service{
+   
         a:link {
-            text-decoration: white;
+            text-decoration: none;
+            color:white
         }
         a:visited {
-            text-decoration: white;
+            text-decoration: none;
+            color:white
         }
         a:hover {
-            text-decoration: white;
+            text-decoration: none;
+            color:white
         }
         a:active {
-            text-decoration: white;
+            text-decoration: none;
+            color:white
         }    
         .picture-services{
             padding: $padding;
         }
-    }
+    
 }
 .desktop-usp{
 @include flex-container;
